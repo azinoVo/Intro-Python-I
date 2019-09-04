@@ -13,10 +13,10 @@ for x in sys.argv:
     print(x)
 
 # Print out the OS platform you're using:
-print(sys.getwindowsversion().platform_version)
+print(f"OS Platform: {sys.getwindowsversion().platform_version}")
 
 # Print out the version of Python you're using:
-print(sys.version)
+print(f"System Version: {sys.version}")
 
 
 import os
@@ -26,7 +26,7 @@ import os
 print(f"ID: {os.getpid()}")
 
 # Print the current working directory (cwd):
-# YOUR CODE HERE
+print(f"CWD: {os.getcwd()}")
 
 # Print out your machine's login name
-# YOUR CODE HERE
+print(f"Login Name: {os.getlogin()}")
